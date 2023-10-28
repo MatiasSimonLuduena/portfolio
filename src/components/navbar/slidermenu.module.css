@@ -1,0 +1,70 @@
+.container {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .container_main {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+}
+
+.container .container_main a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 5px 10px;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container svg {
+    color: #000;
+    position: absolute;
+    top: 10px;
+    left: 270px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.right {
+    animation-name: right;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+.left {
+    animation-name: left;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+.hidden {
+    right: 300px;
+    pointer-events: none;
+}
+
+@keyframes right {
+    0% {
+        right: 300px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes left {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 300px;
+    }
+}

@@ -1,0 +1,50 @@
+/* GLOBAL */
+:root {
+    --color-dark: #353535;
+}
+
+.hidden {
+    display: block;
+}
+
+.show {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .hidden {
+        display: none !important;
+    }
+    .show {
+        display: flex !important;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.container .container_main .container_logo {
+    cursor: pointer;
+}
+
+.container .container_main .container_logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.container .container_main .container_logo span {
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--color-dark);
+}
+
+.container .container_main .container_bars svg {
+    font-size: 1.6em;
+    cursor: pointer;
+}

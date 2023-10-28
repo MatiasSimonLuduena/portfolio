@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(232, 232, 232);
+}
+
+#root {
+  position: relative;
+}
+
+.buttons_a {
+  font-size: .85em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .05em;
+  color: var(--color-dark);
+  margin: 5px 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button_hover:hover {
+  color: #186F65 !important;
+}
