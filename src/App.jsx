@@ -4,6 +4,7 @@ import { useState } from "react"
 import Navbar from "./components/navbar/Navbar"
 import SliderMenu from "./components/navbar/SliderMenu"
 import Home from "./components/home/Home"
+import About from "./components/about/About"
 import Footer from "./components/footer/Footer"
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <SliderMenu setSlider={setSlider} slider={slider} />
       <Navbar setSlider={setSlider} />
       <Home />
+      <About />
       <Footer />
     </>
   )
