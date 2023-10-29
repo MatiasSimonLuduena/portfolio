@@ -16,10 +16,10 @@ const Navbar = ({ setSlider }) => {
             <div className={
                 `${styles.container_buttons} ${styles.show}`
             }>
-                <a className="button_hover buttons_a">Home</a>
-                <a className="button_hover buttons_a">About me</a>
-                <a className="button_hover buttons_a">Contact</a>     
-                <a className="button_hover buttons_a">Projects</a>
+                <a className="button_hover buttons_a">Inicio</a>
+                <a className="button_hover buttons_a">Sobre mi</a>
+                <a className="button_hover buttons_a">Contacto</a>     
+                <a className="button_hover buttons_a">Proyectos</a>
             </div>
             <div className={
                 `${styles.container_bars} ${styles.hidden} d-flex align-items-center`

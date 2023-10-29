@@ -30,3 +30,8 @@ body {
 .button_hover:hover {
   color: #186F65 !important;
 }
+
+.copyright {
+  font-size: .8em;
+  font-weight: 300;
+}
