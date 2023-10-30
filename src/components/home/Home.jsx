@@ -15,6 +15,9 @@ const Home = () => {
         <img alt="GitHub" src="social/github.png" />
         <img alt="Instagram" src="social/instagram.png" />
       </div>
+      <a className={styles.mail} href="mailto:matiasluduena.contacto@gmail.com">
+        matiasluduena.contacto@gmail.com
+      </a>
     </section>
   )
 }

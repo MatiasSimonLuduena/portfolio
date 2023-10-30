@@ -12,23 +12,11 @@
     height: 100%;
     background-color: #186F65;
     padding: 20px 10px 10px;
+    position: relative;
 }
 
 .container .container_main a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 900;
     font-size: 1em;
-    margin: 5px 10px;
-    padding: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    letter-spacing: 1px;
-    border-radius: 5px;
-}
-
-.container .container_main a:hover {
-    background-color: #208074;
 }
 
 .container svg {
@@ -74,4 +62,13 @@
     100% {
         right: 300px;
     }
+}
+
+.container p {
+    color: #dbdbdb;
+    font-weight: 300;
+    font-size: .85em;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
 }

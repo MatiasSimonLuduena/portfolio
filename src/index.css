@@ -26,7 +26,7 @@ body {
 
 .buttons_a {
   font-size: .85em;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .05em;
@@ -49,15 +49,11 @@ body {
 }
 
 .button_hover:hover {
-  box-sizing: border-box !important;
-  outline: 1px solid #fff;
-  border-radius: 5px;
+  font-weight: 900;
 }
 
 .button_active {
-  box-sizing: border-box !important;
-  outline: 1px solid #fff;
-  border-radius: 5px;
+  font-weight: 900;
 }
 
 .button {

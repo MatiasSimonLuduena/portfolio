@@ -60,3 +60,10 @@
         margin-top: 25px;
     }
 }
+
+.mail {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 300;
+    font-size: .9em;
+}
