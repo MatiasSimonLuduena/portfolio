@@ -5,6 +5,14 @@
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   min-width: 100vw;
@@ -18,18 +26,38 @@ body {
 
 .buttons_a {
   font-size: .85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .05em;
+  color: #e0e0e0;
+  margin: 5px 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons_a_active {
+  color: #186F65;
+  font-size: .85em;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .05em;
-  color: var(--color-dark);
   margin: 5px 10px;
   padding: 10px;
   cursor: pointer;
 }
 
 .button_hover:hover {
-  color: #186F65 !important;
+  box-sizing: border-box !important;
+  outline: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.button_active {
+  box-sizing: border-box !important;
+  outline: 1px solid #fff;
+  border-radius: 5px;
 }
 
 .button {
@@ -42,6 +70,7 @@ body {
   border-radius: 5px;
   letter-spacing: 1px;
   transition: .5s;
+  cursor: pointer;
 }
 
 .button:hover {

@@ -2,7 +2,7 @@ import styles from './contact.module.css'
 
 const Contact = () => {
   return (
-    <div className={styles.container_app}>
+    <section className={styles.container_app} id='contact'>
         <div className='container'>
             <div className={`${styles.top} pb-3`}>
                 <h3 className="h3_title pt-3 mt-5">Contacto</h3>
@@ -27,7 +27,7 @@ const Contact = () => {
                 <button className='button mt-3'>Enviar</button>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

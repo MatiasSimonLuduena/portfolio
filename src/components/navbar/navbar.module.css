@@ -24,7 +24,9 @@
 .container {
     width: 100%;
     height: auto;
-    background-color: #fff;
+    background-color: #186F65;
+    position: fixed;
+    z-index: 9;
 }
 
 .container .container_main .container_logo {
@@ -41,10 +43,15 @@
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .05em;
-    color: var(--color-dark);
+    color: #fff;
 }
 
 .container .container_main .container_bars svg {
     font-size: 1.6em;
     cursor: pointer;
+    color: #fff;
+}
+
+.container .container_main .show a {
+    color: #fff;
 }

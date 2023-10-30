@@ -33,5 +33,25 @@ export const projects = [
         img: "computer.png",
         h3: "Titulo del proyecto",
         p: "Descripcion del proyecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime praesentium fugiat excepturi odit quod alias vero omnis quisquam reiciendis perferendis enim, sequi quidem dolorem, neque iusto perspiciatis tempora, magnam corporis!"
+    },
+    {
+        img: "computer.png",
+        h3: "Titulo del proyecto",
+        p: "Descripcion del proyecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime praesentium fugiat excepturi odit quod alias vero omnis quisquam reiciendis perferendis enim, sequi quidem dolorem, neque iusto perspiciatis tempora, magnam corporis!"
+    },
+    {
+        img: "computer.png",
+        h3: "Titulo del proyecto",
+        p: "Descripcion del proyecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime praesentium fugiat excepturi odit quod alias vero omnis quisquam reiciendis perferendis enim, sequi quidem dolorem, neque iusto perspiciatis tempora, magnam corporis!"
+    },
+    {
+        img: "computer.png",
+        h3: "Titulo del proyecto",
+        p: "Descripcion del proyecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime praesentium fugiat excepturi odit quod alias vero omnis quisquam reiciendis perferendis enim, sequi quidem dolorem, neque iusto perspiciatis tempora, magnam corporis!"
+    },
+    {
+        img: "computer.png",
+        h3: "Titulo del proyecto",
+        p: "Descripcion del proyecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime praesentium fugiat excepturi odit quod alias vero omnis quisquam reiciendis perferendis enim, sequi quidem dolorem, neque iusto perspiciatis tempora, magnam corporis!"
     }
 ]

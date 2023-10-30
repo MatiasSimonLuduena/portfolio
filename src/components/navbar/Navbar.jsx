@@ -1,25 +1,38 @@
 /* eslint-disable react/prop-types */
 import styles from "./navbar.module.css"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
-const Navbar = ({ setSlider }) => {
+const Navbar = ({ setSlider, currentSection }) => {
   return (
     <div className={styles.container}>
         <div className={
             `${styles.container_main} container d-flex justify-content-between px-4 py-3`
         }>
-            <div className={`${styles.container_logo} d-flex align-items-center`}>
+            <a className={`${styles.container_logo} d-flex align-items-center`} href="/#home">
                 <img src="avatar.png" alt="Avatar" />
-                <span className="button_hover ms-3">Matias Ludueña</span>
-            </div>
+                <span className="ms-3">Matias Ludueña</span>
+            </a>
             <div className={
                 `${styles.container_buttons} ${styles.show}`
             }>
-                <a className="button_hover buttons_a">Inicio</a>
-                <a className="button_hover buttons_a">Sobre mi</a>   
-                <a className="button_hover buttons_a">Proyectos</a>
-                <a className="button_hover buttons_a">Contacto</a>  
+                <a href="/#home"
+                    className={`button_hover buttons_a 
+                    ${currentSection === "home" && "button_active"}`}
+                >Inicio</a>
+                <a href="/#about"
+                    className={`button_hover buttons_a 
+                    ${currentSection === "about" && "button_active"}`}
+                >Sobre mi</a>
+                <a href="/#projects"
+                    className={`button_hover buttons_a 
+                    ${currentSection === "projects" && "button_active"}`}
+                >Proyectos</a>
+                <a href="/#contact"
+                    className={`button_hover buttons_a 
+                    ${currentSection === "contact" && "button_active"}`}
+                >Contacto</a>
             </div>
             <div className={
                 `${styles.container_bars} ${styles.hidden} d-flex align-items-center`

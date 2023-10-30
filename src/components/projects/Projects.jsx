@@ -1,10 +1,12 @@
 import styles from './projects.module.css'
 
+import { Link } from "react-router-dom"
+
 import { projects } from "../../../data"
 
 const Projects = () => {
   return (
-    <div className={styles.container_app}>
+    <section className={styles.container_app} id='projects'>
         <div className='container'>
             <div className={`${styles.top} pb-5 pt-1 mb-3`}>
                 <h3 className="h3_title pt-3 mt-5">Proyectos</h3>
@@ -15,7 +17,7 @@ const Projects = () => {
             </div>
             <div className={styles.container_main}>
                 {
-                    projects.map((item, index) => (
+                    projects.slice(0, 2).map((item, index) => (
                         <div className={styles.main_div} key={index}>
                             <img alt='computer' src={item.img} />
                             <div>
@@ -28,10 +30,10 @@ const Projects = () => {
                 }
             </div>
             <div className={styles.all_projects}>
-                <button>todos los proyectos</button>
+                <Link to="/projects">todos los proyectos</Link>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,14 +1,5 @@
 .container_app {
-    background-color: #fff;
     padding: 80px 20px 20px;
-}
-
-.container_app .top {
-    text-align: center;
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto;
-    position: relative;
 }
 
 .container_app .container_main {
@@ -50,28 +41,4 @@
     .container_app .container_main .main_div {
         width: 90%;
     }
-}
-
-.container_app .all_projects {
-    width: 100%;
-    padding: 50px 0 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container_app .all_projects a {
-    border: none;
-    background-color: #000;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    font-weight: 700;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: .5s;
-}
-
-.container_app .all_projects a:hover {
-    transform: translateY(-2px);
 }

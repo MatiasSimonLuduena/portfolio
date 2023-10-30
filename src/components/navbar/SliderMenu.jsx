@@ -15,10 +15,10 @@ const SliderMenu = ({ slider, setSlider }) => {
       <div className={`${styles.container_main} d-flex flex-column align-items-start`}
         onClick={e => e.stopPropagation()}
       >
-        <a className="button_hover">Inicio</a>
-        <a className="button_hover">Sobre mi</a>
-        <a className="button_hover">Proyectos</a>
-        <a className="button_hover">Contacto</a>
+        <a href="#home" onClick={() => setSlider("left")}>Inicio</a>
+        <a href="#about" onClick={() => setSlider("left")}>Sobre mi</a>
+        <a href="#projects" onClick={() => setSlider("left")}>Proyectos</a>
+        <a href="#contact" onClick={() => setSlider("left")}>Contacto</a>
       </div>
       <FontAwesomeIcon icon={faXmark} onClick={() => setSlider("left")} />
     </div>

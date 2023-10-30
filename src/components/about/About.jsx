@@ -4,7 +4,7 @@ import { about } from "../../../data"
 
 const About = () => {
   return (
-    <div className={styles.container_app}>
+    <section className={styles.container_app} id="about">
         <div className="container">
             <div className={`${styles.top} pb-3`}>
                 <h3 className="h3_title pt-3 mt-5">Sobre mi</h3>
@@ -41,7 +41,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
