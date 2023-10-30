@@ -17,9 +17,9 @@ const Navbar = ({ setSlider }) => {
                 `${styles.container_buttons} ${styles.show}`
             }>
                 <a className="button_hover buttons_a">Inicio</a>
-                <a className="button_hover buttons_a">Sobre mi</a>
-                <a className="button_hover buttons_a">Contacto</a>     
+                <a className="button_hover buttons_a">Sobre mi</a>   
                 <a className="button_hover buttons_a">Proyectos</a>
+                <a className="button_hover buttons_a">Contacto</a>  
             </div>
             <div className={
                 `${styles.container_bars} ${styles.hidden} d-flex align-items-center`

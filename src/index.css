@@ -55,6 +55,14 @@ body {
   letter-spacing: 1px;
 }
 
+.line {
+  background-color: #186F65;
+  width: 150px;
+  height: 4px;
+  border-radius: 5px;
+  margin: 0 auto 25px;
+}
+
 .parraf {
   font-size: 1.1em;
   color: rgb(80, 80, 80);

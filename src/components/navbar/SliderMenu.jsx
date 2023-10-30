@@ -17,8 +17,8 @@ const SliderMenu = ({ slider, setSlider }) => {
       >
         <a className="button_hover">Inicio</a>
         <a className="button_hover">Sobre mi</a>
-        <a className="button_hover">Contacto</a>
         <a className="button_hover">Proyectos</a>
+        <a className="button_hover">Contacto</a>
       </div>
       <FontAwesomeIcon icon={faXmark} onClick={() => setSlider("left")} />
     </div>

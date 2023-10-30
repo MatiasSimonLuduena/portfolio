@@ -7,7 +7,8 @@ const About = () => {
     <div className={styles.container_app}>
         <div className="container">
             <div className={`${styles.top} pb-3`}>
-                <h3 className="h3_title pt-3 mt-5 pb-3">Sobre mi</h3>
+                <h3 className="h3_title pt-3 mt-5">Sobre mi</h3>
+                <div className="line"></div>
                 <span className="parraf">
                     Aquí encontrarás más información sobre mí, lo que hago y mis habilidades actuales principalmente en términos de programación y tecnología.
                 </span>

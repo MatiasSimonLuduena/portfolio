@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar"
 import SliderMenu from "./components/navbar/SliderMenu"
 import Home from "./components/home/Home"
 import About from "./components/about/About"
+import Projects from "./components/projects/Projects"
 import Footer from "./components/footer/Footer"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar setSlider={setSlider} />
       <Home />
       <About />
+      <Projects />
       <Footer />
     </>
   )
