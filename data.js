@@ -15,7 +15,7 @@ export const about = {
             array: [ "Firebase", "Visual Studio Code", "Postman", "Photoshop" ]
         },
         {
-            array: [ "ReactJS", "TypeScript", "SCSS / SACC", "API Rest", "Responsive Design" ]
+            array: [ "ReactJS", "TypeScript", "SCSS / SASS", "API Rest", "Responsive Design" ]
         },
         {
             array: [ "NodeJS", "ExpressJS", "MongoDB" ]
