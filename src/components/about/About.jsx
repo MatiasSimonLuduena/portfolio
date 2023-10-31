@@ -30,9 +30,10 @@ const About = () => {
                     {
                         about.skills.map((item, i) => (
                             <div key={i}>
+                                <p className={styles.body_skills_p}>{ item.p }</p>
                                 <div className={styles.cajas}>
                                     { item.array.map((itemDos, index) => (
-                                        <div key={index}>{ itemDos }</div>
+                                        <img src={itemDos} alt="" key={index} />
                                     )) }
                                 </div>
                             </div>

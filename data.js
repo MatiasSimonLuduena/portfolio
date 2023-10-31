@@ -6,20 +6,21 @@ export const about = {
     ],
     skills: [
         {
-            array: [ "HTML", "CSS", "JavaScript" ]
+            p: "Lenguajes y tecnologías",
+            array: [ "skills/html-5.png", "skills/css-3.png", "skills/js.png", "skills/git.png", "skills/terminal.png" ]
         },
         {
-            array: [ "Git", "Terminal" ]
+            p: "Tecnologías Frontend",
+            array: [ "skills/react.png", "skills/typescript.png", "skills/sass.png", "skills/npm.png", "skills/webpack.png" ]
         },
         {
-            array: [ "Firebase", "Visual Studio Code", "Postman", "Photoshop" ]
+            p: "Tecnologías Backend",
+            array: [ "skills/nodejs.png", "skills/mongodb.png", "skills/firebase.png", "skills/postman.png", ]
         },
         {
-            array: [ "ReactJS", "TypeScript", "SCSS / SASS", "API Rest", "Responsive Design" ]
-        },
-        {
-            array: [ "NodeJS", "ExpressJS", "MongoDB" ]
-        },
+            p: "Programas",
+            array: [ "skills/photoshop.png" ]
+        }
     ]
 }
 

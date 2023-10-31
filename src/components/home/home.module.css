@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 576px) {
+    .container_app {
+        padding: 82px 10px 10px;
+    }
     .container_app h1 {
         font-size: 1.8em;
     }
@@ -82,5 +85,21 @@
         font-weight: 600;
         text-align: center;
         width: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container_app {
+        padding: 30px 10px 10px;
+    }
+    .container_app h1 {
+        font-size: 1.75em;
+    }
+    .container_app p {
+        font-size: 1.05em;
+        font-weight: 600;
+        text-align: center;
+        width: 85%;
+        padding-bottom: 20px;
     }
 }
