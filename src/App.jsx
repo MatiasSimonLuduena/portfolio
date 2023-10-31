@@ -14,6 +14,10 @@ import Footer from "./components/footer/Footer"
 // imports page
 import ProjectsPage from "./pages/projects/ProjectsPage"
 
+// firebase imports
+import { collection, getDocs } from "firebase/firestore"
+import { db } from './firebase'
+
 function App() {
   const [slider, setSlider] = useState(null);
 
@@ -37,11 +41,23 @@ function App() {
     window.addEventListener('scroll', updateCurrentSection);
 
     updateCurrentSection();
+    getData();
 
     return () => {
       window.removeEventListener('scroll', updateCurrentSection);
     };
   }, []);
+
+  // firestore
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  async function getData() {
+    const querySnapshot = await getDocs(collection(db, "portfolio"));
+    const data = querySnapshot.docs.map(doc => ({...doc.data()}))
+    setData(data)
+    setLoading(false);
+  }
 
   return (
     <>
@@ -50,7 +66,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <Home />
+            <Home data={data[0]} loading={loading} />
             <About />
             <Projects />
             <Contact />
