@@ -12,9 +12,21 @@ const Footer = () => {
                 <div className={styles.divs}>
                     <span className="m-3">Redes sociales</span>
                     <div className="m-3 mt-4">
+                    <a href="https://wa.me/543518147093" target="_blank" rel="noreferrer">
+                        <img alt="Whatsapp" src="social/whatsapp.png" />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/matiassimonluduena"
+                        target="_blank" rel="noreferrer"
+                    >
                         <img alt="LinkedIn" src="social/linkedin.png" />
+                    </a>
+                    <a href="https://github.com/MatiasSimonLuduena" target="_blank"     rel="noreferrer">
                         <img alt="GitHub" src="social/github.png" />
+                    </a>
+                    <a href="https://www.instagram.com/matias.sluduena" target="_blank" rel="noreferrer">
                         <img alt="Instagram" src="social/instagram.png" />
+                    </a>
                     </div>
                     <a className={styles.mail} href="mailto:matiasluduena.contacto@gmail.com">
                         matiasluduena.contacto@gmail.com

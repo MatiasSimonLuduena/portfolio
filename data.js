@@ -7,11 +7,11 @@ export const about = {
     skills: [
         {
             p: "Lenguajes y tecnologías",
-            array: [ "skills/html-5.png", "skills/css-3.png", "skills/js.png", "skills/git.png", "skills/terminal.png" ]
+            array: [ "skills/html-5.png", "skills/css-3.png", "skills/js.png", "skills/git.png", "skills/npm.png" ]
         },
         {
             p: "Tecnologías Frontend",
-            array: [ "skills/react.png", "skills/typescript.png", "skills/sass.png", "skills/npm.png", "skills/webpack.png" ]
+            array: [ "skills/react.png", "skills/typescript.png", "skills/sass.png" ]
         },
         {
             p: "Tecnologías Backend",

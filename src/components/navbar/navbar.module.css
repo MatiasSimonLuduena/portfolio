@@ -29,6 +29,31 @@
     z-index: 9;
 }
 
+.oculto {
+    animation: oculto .7s forwards;
+}
+
+.mostrar {
+    animation: mostrar .7s forwards;
+}
+
+@keyframes oculto {
+    to {
+        transform: translateY(-85px);
+    }
+}
+
+@keyframes mostrar {
+    from {
+        transform: translateY(-85px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* OTHER */
+
 .container .container_main .container_logo {
     cursor: pointer;
 }

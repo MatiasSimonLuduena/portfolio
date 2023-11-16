@@ -1,0 +1,10 @@
+Formulario con firebase
+
+Projects tablet y añadir los 2 proyectos
+
+agregar CV
+
+
+Fetch datos - url
+
+Mejorar legibilidad del codigo. Quitar botones y animaciones de más. 

@@ -19,21 +19,21 @@ const SliderMenu = ({ slider, setSlider, currentSection }) => {
           className={`button_hover buttons_a mt-3
           ${currentSection === "home" && "button_active"}`}
         >Inicio</a>
+        
         <a href="#about" onClick={() => setSlider("left")}
           className={`button_hover buttons_a 
           ${currentSection === "about" && "button_active"}`}
         >Sobre mi</a>
+
         <a href="#projects" onClick={() => setSlider("left")}
           className={`button_hover buttons_a 
           ${currentSection === "projects" && "button_active"}`}
         >Proyectos</a>
+
         <a href="#contact" onClick={() => setSlider("left")}
           className={`button_hover buttons_a 
           ${currentSection === "contact" && "button_active"}`}
         >Contacto</a>
-
-      <p>
-        La simplicidad es la máxima sofisticación. <br/>- Leonardo da Vinci</p>
       </div>
       <FontAwesomeIcon icon={faXmark} onClick={() => setSlider("left")} />
     </div>

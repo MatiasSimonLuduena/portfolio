@@ -10,6 +10,28 @@
     padding: 82px 10px 10px;
 }
 
+.container_app .container_init h1 {
+    animation: init .7s forwards;
+}
+
+.container_app .container_init p,
+.container_app .container_init a,
+.container_app .social_media, .mail {
+    animation: init .7s forwards;
+    animation-delay: .2s;
+}
+
+@keyframes init {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .container_app div:first-child {
     display: flex;
     flex-direction: column;
@@ -22,6 +44,7 @@
     color: rgb(80, 80, 80);
     padding-top: 25px;
     font-weight: 300;
+    opacity: 0;
 }
 
 .mail:hover {
@@ -43,6 +66,7 @@
     text-align: center;
     width: 85%;
     padding-bottom: 30px;
+    opacity: 0;
 }
 
 .container_app .social_media {
@@ -51,6 +75,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 75px;
+    opacity: 0;
 }
 
 .container_app .social_media img {

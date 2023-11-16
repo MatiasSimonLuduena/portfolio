@@ -23,7 +23,10 @@ const About = () => {
                             </p>
                         ))
                     }
-                    <button className="button">Contactame</button>
+                    
+                    <a href="/#contact">
+                        <button className="button">Contactame</button>  
+                    </a>
                 </div>
                 <div className={styles.body_div}>
                     <h4 className="pb-3">Mis habilidades</h4>

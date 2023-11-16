@@ -14,17 +14,18 @@ import Footer from "./components/footer/Footer"
 // imports page
 import ProjectsPage from "./pages/projects/ProjectsPage"
 
-// firebase imports
-import { collection, getDocs } from "firebase/firestore"
-import { db } from './firebase'
-
 function App() {
   const [slider, setSlider] = useState(null);
+
+  // hiden nav
+  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+  const [showNav, setShowNav] = useState("init");
 
   // menu active button
   const [currentSection, setCurrentSection] = useState('');
 
   useEffect(() => {
+    // section current
     const updateCurrentSection = () => {
       const sections = document.querySelectorAll('section');
       let currentSection = '';
@@ -41,33 +42,39 @@ function App() {
     window.addEventListener('scroll', updateCurrentSection);
 
     updateCurrentSection();
-    getData();
+
+    // hidden nav
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      // Determinar si el scroll es hacia arriba o hacia abajo
+      if (currentPosition > scrollPosition) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+
+      // Actualizar la posición del scroll
+      setScrollPosition(currentPosition);
+    };
+
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', updateCurrentSection);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-
-  // firestore
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  async function getData() {
-    const querySnapshot = await getDocs(collection(db, "portfolio"));
-    const data = querySnapshot.docs.map(doc => ({...doc.data()}))
-    setData(data)
-    setLoading(false);
-  }
+  }, [scrollPosition]);
 
   return (
     <>
       <SliderMenu setSlider={setSlider} slider={slider} currentSection={currentSection} />
-      <Navbar setSlider={setSlider} currentSection={currentSection} />
+      <Navbar setSlider={setSlider} currentSection={currentSection} showNav={showNav} />
       <Routes>
         <Route path="/" element={
           <>
-            <Home data={data[0]} loading={loading} />
-            <About />
+            <Home />
+            <About/>
             <Projects />
             <Contact />
           </>
