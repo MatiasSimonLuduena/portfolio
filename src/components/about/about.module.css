@@ -8,16 +8,12 @@
     max-width: 850px;
     margin: 0 auto;
     position: relative;
-    animation: init .7s forwards;
 }
 
 .container_app .body {
     display: flex;
     gap: 150px;
     padding: 65px 0;
-    animation: init .7s forwards;
-    animation-delay: .2s;
-    opacity: 0;
 }
 
 .container_app .body .body_div {
@@ -61,16 +57,5 @@
 @media (max-width: 576px) {
     .container_app .body {
         gap: 80px;
-    }
-}
-
-@keyframes init {
-    from {
-        transform: translateY(40px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
     }
 }

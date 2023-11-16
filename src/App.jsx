@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 
 // imports components
 import Navbar from "./components/navbar/Navbar"
@@ -11,15 +11,8 @@ import Projects from "./components/projects/Projects"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
 
-// imports page
-import ProjectsPage from "./pages/projects/ProjectsPage"
-
 function App() {
   const [slider, setSlider] = useState(null);
-
-  // hiden nav
-  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
-  const [showNav, setShowNav] = useState("init");
 
   // menu active button
   const [currentSection, setCurrentSection] = useState('');
@@ -43,33 +36,15 @@ function App() {
 
     updateCurrentSection();
 
-    // hidden nav
-    const handleScroll = () => {
-      const currentPosition = window.scrollY;
-
-      // Determinar si el scroll es hacia arriba o hacia abajo
-      if (currentPosition > scrollPosition) {
-        setShowNav(false);
-      } else {
-        setShowNav(true);
-      }
-
-      // Actualizar la posición del scroll
-      setScrollPosition(currentPosition);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', updateCurrentSection);
-      window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollPosition]);
+  }, []);
 
   return (
     <>
       <SliderMenu setSlider={setSlider} slider={slider} currentSection={currentSection} />
-      <Navbar setSlider={setSlider} currentSection={currentSection} showNav={showNav} />
+      <Navbar setSlider={setSlider} currentSection={currentSection} />
       <Routes>
         <Route path="/" element={
           <>
@@ -79,7 +54,7 @@ function App() {
             <Contact />
           </>
         } />
-        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/*" element={<Navigate to="/"/>} />
       </Routes>
       <Footer />
     </>

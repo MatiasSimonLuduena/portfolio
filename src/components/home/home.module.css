@@ -14,6 +14,22 @@
     animation: init .7s forwards;
 }
 
+.container_app .container_init a {
+    background-color: #186F65;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9em;
+    padding: 10px 25px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container_app .container_init a:hover {
+    background-color: #1c8074;
+}
+
 .container_app .container_init p,
 .container_app .container_init a,
 .container_app .social_media, .mail {

@@ -1,7 +1,5 @@
 import styles from './projects.module.css'
 
-import { Link } from "react-router-dom"
-
 import { projects } from "../../../data"
 
 const Projects = () => {
@@ -28,9 +26,6 @@ const Projects = () => {
                         </div>
                     ))
                 }
-            </div>
-            <div className={styles.all_projects}>
-                <Link to="/projects">todos los proyectos</Link>
             </div>
         </div>
     </section>

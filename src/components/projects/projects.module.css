@@ -9,16 +9,12 @@
     max-width: 850px;
     margin: 0 auto;
     position: relative;
-    animation: init .7s forwards;
 }
 
 .container_app .container_main {
     display: flex;
     flex-wrap: wrap;
     gap: 80px 50px;
-    animation: init .7s forwards;
-    animation-delay: .3s;
-    opacity: 0;
 }
 
 .container_app .container_main .main_div {
@@ -78,15 +74,4 @@
 
 .container_app .all_projects a:hover {
     transform: translateY(-2px);
-}
-
-@keyframes init {
-    from {
-        transform: translateY(40px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }

@@ -4,13 +4,11 @@ import styles from "./navbar.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
-const Navbar = ({ setSlider, currentSection, showNav }) => {
+const Navbar = ({ setSlider, currentSection }) => {
   return (
-    <div className={`
-        ${styles.container} ${showNav !== "init" && (showNav ? styles.mostrar : styles.oculto)}
-    `}>
+    <div className={styles.container}>
         <div className={
-            `${styles.container_main} container d-flex justify-content-between px-4 py-3`
+            `${styles.container_main} container d-flex justify-content-between px-4 py-2`
         }>
             <a className={`${styles.container_logo} d-flex align-items-center`} href="/#home">
                 <img src="avatar.png" alt="Avatar" />
